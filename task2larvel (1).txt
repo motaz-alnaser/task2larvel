@@ -1,0 +1,43 @@
+App: Every class I create is part of a layer and includes the Model and the HTTP logic handled by the Controller
+Routes:This layer contains the route definition files, including web.php and api.php
+Resources:This folder contains Blade views and frontend files like CSS, JS, and images.
+Public:This is the public web folder. It includes index.php and any files accessible directly via the browser.
+Database:It contains migrations, seeders, and factories to organize the database.
+Config:: Contains application settings files (such as database, mail, sessions...).
+Formulated in English in easy and simple language
+
+model in App
+view in Resources
+controller in App
+
+PHP ARTISAN SERVE
+php artisan make:controller PostController
+php artisan migrate
+
+• 1. Request (The Order): A user performs an action, like typing a URL into their browser or clicking a button. This sends a digital "order" to the server. 
+• 2. Route (The Signpost): The server receives the request and looks at the Route map. The route determines exactly where the request should go based on the URL (e.g., /profile or /shop). 
+• 3. Controller (The Manager): The route hands the request to a Controller. Think of the controller as a manager or a waiter; it processes the logic, talks to the database (Model) if needed, and decides what information is required. 
+• 4. View (The Presentation): The controller sends the processed data to the View. The view is a template that turns raw data into a pretty layout with HTML, CSS, and images.
+• 5. Response (The Delivery): The final formatted page is sent back to the user's browser as a Response, completing the cycle and displaying the website on their screen.
+
+Request : the orders
+Route : The Direction
+Controller : The Logic
+View : The UI
+Response : The Result
+
+1. in larvel the data get from controller to view(blade file)
+2. in blade use {{}} to display data safely
+
+Or navigation menu, <html>, <head>, <body> is a basic that contains the general page structure: such as Blade is the master layout file
+Its goal to avoid repeating the same code on every page.
+
+
+In order not to write fixed things every time on every page where I need them, I write them down once and call them up as soon as I need them.
+
+
+Conditionals (@if) When we need to decide to display a specific part of the page based on a condition.
+• why ?
+Because sometimes the data differs from one user to another or from one case to another, and we don't want everything to always appear.
+
+Loops (@foreach) When we have a set of data that we want to display repeatedly, such as a list of products or users
